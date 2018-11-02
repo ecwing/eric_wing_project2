@@ -1,0 +1,18 @@
+/*  Block */
+.gal {
+    background-color: teal;
+}
+
+.gallery {
+    margin: 0 auto;
+    padding: 100px 0;
+    max-width: 1280px;
+    background: cadetblue;
+    display: flex;
+    align-items: center;
+}
+
+.gallery__cell {
+    padding: 0 10px;
+    margin: 0 auto;
+}

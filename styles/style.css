@@ -133,5 +133,54 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
   -webkit-box-sizing: border-box;
   box-sizing: border-box; }
 
+img {
+  display: block;
+  width: 100%; }
+
 body {
-  background: teal; }
+  max-width: 1600px; }
+
+.nav {
+  background-color: #f6a823;
+  font-size: 20px;
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+
+.nav__item a {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #2c2c2c; }
+
+.nav__item--active a {
+  color: #fff; }
+
+/*  Block */
+.gal {
+  background-color: teal; }
+
+.gallery {
+  margin: 0 auto;
+  padding: 100px 0;
+  max-width: 1280px;
+  background: cadetblue;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center; }
+
+.gallery__cell {
+  padding: 0 10px;
+  margin: 0 auto; }
+
+.footer__content {
+  text-align: center;
+  background: #2c2c2c;
+  color: #fff; }
+
+p.footer__content {
+  padding: 0;
+  margin: 0; }

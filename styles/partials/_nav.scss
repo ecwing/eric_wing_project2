@@ -1,0 +1,17 @@
+.nav {
+    background-color: $primaryColor;
+    font-size: 20px;
+    list-style: none;
+    display: flex;
+
+}
+
+.nav__item a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: $blackColor;
+}
+
+.nav__item--active a {
+  color: #fff;
+}
