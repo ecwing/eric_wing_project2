@@ -1,8 +1,24 @@
 @import "partials/setup";
 @import "partials/global";
 @import "partials/nav";
+@import "partials/header";
+@import "partials/journey";
 @import "partials/gallery";
 
 
 
 @import "partials/footer";
+
+
+.skip-link {
+    position: absolute;
+    left: -1000px;
+    top: 5px;
+    z-index: 999;
+    background: white;
+    color: black;
+}
+
+.skip-link:focus {
+    left: 0;
+}

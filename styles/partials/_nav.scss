@@ -1,17 +1,36 @@
-.nav {
+nav {
     background-color: $primaryColor;
-    font-size: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.nav {
+    @include menuText;
     list-style: none;
     display: flex;
+    align-items: center;
+    margin: 0;
+    padding-left: 0px;
 
+        &__item {
+            padding: 20px;
+
+        }
+        &__item a {
+            text-decoration: none;
+            text-transform: uppercase;
+            color: $blackColor;
+
+        }
+
+        .nav__item--active a {
+            color: #fff;  
+        }
+
+        .nav__item--focus a {
+            font-family: $secondaryFont;
+            @include fontSize(30);
+        }
 }
 
-.nav__item a {
-    text-decoration: none;
-    text-transform: uppercase;
-    color: $blackColor;
-}
 
-.nav__item--active a {
-  color: #fff;
-}

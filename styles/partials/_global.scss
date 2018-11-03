@@ -7,18 +7,60 @@ $blackColor: #2c2c2c; //Black..
 $mainFont: 'Roboto', sans-serif;
 $secondaryFont: 'Lora', serif;
 
+body {
+    max-width: 1600px;
+    margin: 0 auto;
+}
+
+@mixin fontSize($sizeValue){
+    font-size: $sizeValue * 1px;
+    font-size: ($sizeValue/10) * 1rem;
+}
 
 @mixin primaryFont($size){
     font-family: $mainFont;
     color: $blackColor;
-    font-size: $size;
 }
 
 @mixin secondaryFont($size) {
     font-family: $secondaryFont;
     color: $blackColor;
-    font-size: $size;
+}
+
+h1 {
+    font-family: $secondaryFont;
     text-transform: uppercase;
+    font-weight: bold;
+    line-height: fontSize(92);
+    @include fontSize(80);
+}
+
+h2 {
+    font-family: $mainFont;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 1px;
+    @include fontSize(42);
+}
+
+h3 {
+    font-family: $mainFont;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 1px;
+    @include fontSize(32);
+}
+
+@mixin menuText {
+    font-family: $mainFont;
+    font-weight: bold;
+    text-transform: uppercase;
+    line-height: 29px;
+    letter-spacing: 1px;
+}
+
+@mixin mainWrapper {
+    max-width: 1280px;
 }
 
 @mixin buttonText($size) {
@@ -32,6 +74,14 @@ img {
     width: 100%;
 }
 
-body {
-    max-width: 1600px;
+a {
+    display: block;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+p {
+    font-family: $mainFont;
+    line-height: 32px;
+    @include fontSize(20);
 }

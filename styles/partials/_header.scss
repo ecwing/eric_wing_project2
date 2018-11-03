@@ -1,0 +1,35 @@
+header {
+    background-color: $primaryColor;
+    display: flex;
+    justify-content: center;
+}
+
+.header {
+    @include mainWrapper;
+    background: teal;
+    display: flex;
+    position: relative;
+
+    &__item--circleText {
+        position: absolute;
+        width: 20%;
+        height: auto;
+        left: 20px;
+        top: 20px;
+    }
+
+    &__item--text {
+        padding-right: 100px;
+    }
+
+    &__item--img {
+        box-shadow: 25px 25px 0px 0px cadetblue;
+        position: relative;
+        top: 50px;
+    }
+
+
+}
+
+
+
