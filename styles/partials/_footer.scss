@@ -1,11 +1,14 @@
+
+// BLOCK
 .footer {
     text-align: center;
     background: $blackColor;
     color: #fff;
+        // ELEMENT
+        &__content {
+            padding: 8px;
+            margin: 0;
+        }
 }
 
-p.footer__content {
-    padding: 8px;
-    margin: 0;
-}
 

@@ -12,25 +12,24 @@ nav {
     margin: 0;
     padding-left: 0px;
 
-        &__item {
-            padding: 20px;
-
-        }
-        &__item a {
-            text-decoration: none;
-            text-transform: uppercase;
-            color: $blackColor;
-
-        }
-
-        .nav__item--active a {
-            color: #fff;  
-        }
-
-        .nav__item--focus a {
+    &__item {
+        padding: 20px;
+        &--focus {
             font-family: $secondaryFont;
             @include fontSize(30);
         }
+    }
+
+    &__item a {
+        text-decoration: none;
+        text-transform: uppercase;
+        color: $blackColor;
+    }
+    
+    .nav__item--active a {
+        color: #fff;  
+    }
+
 }
 
 

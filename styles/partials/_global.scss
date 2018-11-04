@@ -10,11 +10,12 @@ $secondaryFont: 'Lora', serif;
 body {
     max-width: 1600px;
     margin: 0 auto;
+    background: $backgroundColor;
 }
 
 @mixin fontSize($sizeValue){
     font-size: $sizeValue * 1px;
-    font-size: ($sizeValue/10) * 1rem;
+    // font-size: ($sizeValue/10) * 1rem;
 }
 
 @mixin primaryFont($size){
@@ -51,6 +52,12 @@ h3 {
     @include fontSize(32);
 }
 
+p {
+    font-family: $mainFont;
+    line-height: 32px;
+    @include fontSize(20);
+}
+
 @mixin menuText {
     font-family: $mainFont;
     font-weight: bold;
@@ -80,8 +87,52 @@ a {
     text-transform: uppercase;
 }
 
-p {
-    font-family: $mainFont;
-    line-height: 32px;
-    @include fontSize(20);
+.form {
+    display: flex;
+    flex-direction: column;
+
+    &__item {
+        display: flex;
+        // padding: 10px 0;
+        &--item {
+            width: 100%;
+        }
+    }
 }
+
+input[type=text],
+input[type=email],
+input[type=submit],
+textarea {
+    border: none;
+    padding: 15px;
+    margin: 2px;
+}
+
+textarea {
+    padding-top: 20px;
+}
+
+::placeholder {
+    font-style: italic;
+}
+
+input[type=submit] {
+    background: $accentColor;
+    font-weight: bold;
+    padding: 15px 0;
+    margin: 12px 0;
+}
+
+    .visuallyhidden:not(:focus):not(:active) {
+          position: absolute;
+          width: 1px;
+          height: 1px;
+          margin: -1px;
+          border: 0;
+          padding: 0;
+          white-space: nowrap;
+          clip-path: inset(100%);
+          clip: rect(0 0 0 0);
+          overflow: hidden;
+    }
