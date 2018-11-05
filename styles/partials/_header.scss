@@ -6,7 +6,7 @@ header {
 
 .header {
     @include mainWrapper;
-    background: teal;
+    // background: teal;
     display: flex;
     position: relative;
 
@@ -14,31 +14,33 @@ header {
         position: absolute;
         width: 20%;
         height: auto;
-        left: 20px;
-        top: 20px;
+        left: -40px;
+        top: 60px;
     }
 
     &__item--text {
         padding-right: 100px;
+        font-size: 10rem;
     }
 
     &__item--img {
-        box-shadow: 25px 25px 0px 0px cadetblue;
+        box-shadow: 25px 25px 0px 0px #fff;
         position: relative;
         top: 50px;
     }
 }
 
-.headerBanner {
+.headerBannerContact {
     background-image: url('../assets/contact-image-1.jpg');
-    background-position: center; /* Center the image */
-    background-repeat: no-repeat; /* Do not repeat the image */
+    background-position: center;
+    background-repeat: no-repeat;
     background-size: cover;
-    height: 300px;
+    height: 400px;
     width: 100%;
     display: flex;
     align-items: flex-end;
 
+    
     &__item {
         margin: 0;
         padding: 0;
@@ -47,3 +49,22 @@ header {
         top: 50px;
     }
 }
+    .headerBanner__Blog {
+        background-image: url('../assets/blog-image-1.jpg');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 400px;
+        width: 100%;
+        display: flex;
+        align-items: flex-end;
+        // @include mainWrapper;
+
+            &__item {
+                margin: 0;
+                padding: 0;
+                // @include mainWrapper;
+                position: relative;
+                top: 50px;
+            }
+    }

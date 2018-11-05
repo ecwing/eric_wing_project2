@@ -133,6 +133,9 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
   -webkit-box-sizing: border-box;
   box-sizing: border-box; }
 
+html {
+  background: #fff; }
+
 body {
   max-width: 1600px;
   margin: 0 auto;
@@ -159,6 +162,13 @@ h3 {
   letter-spacing: 1px;
   font-size: 32px; }
 
+h4 {
+  font-family: "Roboto", sans-serif;
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 1px;
+  font-size: 24px; }
+
 p {
   font-family: "Roboto", sans-serif;
   line-height: 32px;
@@ -169,9 +179,15 @@ img {
   width: 100%; }
 
 a {
-  display: block;
   text-decoration: none;
   text-transform: uppercase; }
+
+a.find-out-button,
+a.read-more {
+  background: #05afc1;
+  color: #2c2c2c;
+  font-weight: bold;
+  padding: 15px; }
 
 .form {
   display: -webkit-box;
@@ -277,7 +293,6 @@ header {
 
 .header {
   max-width: 1280px;
-  background: teal;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -286,24 +301,23 @@ header {
     position: absolute;
     width: 20%;
     height: auto;
-    left: 20px;
-    top: 20px; }
+    left: -40px;
+    top: 60px; }
   .header__item--text {
-    padding-right: 100px; }
+    padding-right: 100px;
+    font-size: 10rem; }
   .header__item--img {
-    -webkit-box-shadow: 25px 25px 0px 0px cadetblue;
-    box-shadow: 25px 25px 0px 0px cadetblue;
+    -webkit-box-shadow: 25px 25px 0px 0px #fff;
+    box-shadow: 25px 25px 0px 0px #fff;
     position: relative;
     top: 50px; }
 
-.headerBanner {
+.headerBannerContact {
   background-image: url("../assets/contact-image-1.jpg");
   background-position: center;
-  /* Center the image */
   background-repeat: no-repeat;
-  /* Do not repeat the image */
   background-size: cover;
-  height: 300px;
+  height: 400px;
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -311,12 +325,36 @@ header {
   -webkit-box-align: end;
   -ms-flex-align: end;
   align-items: flex-end; }
-  .headerBanner__item {
+  .headerBannerContact__item {
     margin: 0;
     padding: 0;
     max-width: 1280px;
     position: relative;
     top: 50px; }
+
+.headerBanner__Blog {
+  background-image: url("../assets/blog-image-1.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 400px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+  -ms-flex-align: end;
+  align-items: flex-end; }
+  .headerBanner__Blog__item {
+    margin: 0;
+    padding: 0;
+    position: relative;
+    top: 50px; }
+
+.fas {
+  background: #f6a823;
+  padding: 10px;
+  border-radius: 50%; }
 
 .journey {
   background: #f0efed;
@@ -341,7 +379,6 @@ header {
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
     flex-direction: column;
-    border: 2px solid red;
     padding-left: 70px; }
   .journeyFlex__item h2 {
     margin: 0; }
@@ -352,7 +389,7 @@ header {
 
 /*  Block */
 .gal {
-  background-color: teal; }
+  background: #fff; }
 
 .gallery {
   margin: 0 auto;
@@ -378,6 +415,61 @@ header {
 
 .gallery__cell:last-child {
   padding-right: 0; }
+
+.blogContent {
+  max-width: 1280px;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-top: 100px; }
+  .blogContent__Section--aside {
+    width: 33.33%;
+    padding-right: 20px; }
+  .blogContent__Section--Main {
+    width: 66.66%; }
+
+.asideContent {
+  background: #fff;
+  padding: 45px;
+  margin-bottom: 20px; }
+  .asideContent__aboutSection--item a {
+    display: inline-block;
+    text-transform: initial;
+    color: #285e64;
+    font-weight: bold; }
+  .asideContent__recentSection {
+    list-style: none;
+    padding-left: 5px; }
+    .asideContent__recentSection--item::before {
+      content: "\2022";
+      color: #f6a823;
+      font-weight: bold;
+      display: inline-block;
+      width: 2em;
+      margin-left: -2em; }
+    .asideContent__recentSection--item a {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      text-transform: initial;
+      color: #2c2c2c; }
+
+.blog-post {
+  background: white;
+  padding: 45px;
+  border-bottom: 5px solid #f6a823; }
+  .blog-post__text:first-child {
+    margin: 0; }
+  .blog-post__text:nth-child(2) {
+    font-style: italic; }
+
+.blog-reply__section {
+  margin: 35px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background: #fff; }
 
 .contact {
   display: -webkit-box;

@@ -7,6 +7,10 @@ $blackColor: #2c2c2c; //Black..
 $mainFont: 'Roboto', sans-serif;
 $secondaryFont: 'Lora', serif;
 
+html {
+    background: #fff;
+}
+
 body {
     max-width: 1600px;
     margin: 0 auto;
@@ -52,6 +56,14 @@ h3 {
     @include fontSize(32);
 }
 
+h4 {
+    font-family: $mainFont;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 1px;
+    @include fontSize(24);
+}
+
 p {
     font-family: $mainFont;
     line-height: 32px;
@@ -82,10 +94,18 @@ img {
 }
 
 a {
-    display: block;
     text-decoration: none;
     text-transform: uppercase;
 }
+
+a.find-out-button,
+a.read-more {
+    background: $accentColor;
+    color: $blackColor;
+    font-weight: bold;
+    padding: 15px;
+}
+
 
 .form {
     display: flex;
