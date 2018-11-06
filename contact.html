@@ -39,16 +39,15 @@
     
         <!-- HEADER CONTENT BEGINS -->
         <header>
-            <div class="headerBannerContact">
-                <h1 class="headerBannerContact__item">get in touch</h1>
+            <div class="header-banner-contact">
+                <h1 class="header-banner-contact__item">get in touch</h1>
             </div>
         </header>
         <!-- HEADER CONTENT ENDS -->
 
         <!-- MAIN CONTENT BEGINS -->
-        <main class="contact">
-            <section class="contact__section">
-                <aside>
+        <main class="contact main-wrapper">
+            <section class="contact__info">
                     <div class="socials">
                         <ul class="social-icons">
                             <li class="social-icons__icon">
@@ -65,21 +64,20 @@
                             </li>
                         </ul>      
                     </div>
-                    <div class="contactInfo">
-                        <address class="contactInfo__list">
-                            <a class="contactInfo__list--item" href="mailto:info@email.com">info@email.com</a>
-                            <p class="contactInfo__list--item">123 - 456 - 7890</p>
-                            <p class="contactInfo__list--item">123 Queen Street West, Unit 10</p>
-                            <p class="contactInfo__list--item">Toronto, Ontario</p>
-                            <p class="contactInfo__list--item">M5V2D5</p>
+                    <div class="contact-info">
+                        <address class="contact-info__list">
+                            <a class="contact-info__list--item" href="mailto:info@email.com">info@email.com</a>
+                            <p class="contact-info__list--item">123 - 456 - 7890</p>
+                            <p class="contact-info__list--item">123 Queen Street West, Unit 10</p>
+                            <p class="contact-info__list--item">Toronto, Ontario</p>
+                            <p class="contact-info__list--item">M5V2D5</p>
                         </address>
                     </div>
-                </aside>
             </section>
             <!-- ASIDE CONTENT ENDS-->
 
             <!-- FORM SECTION BEGINS -->
-            <section class="contact__section">
+            <section class="contact__form">
                 <form action="sendEmail.php" method="POST" class="form" autocomplete="off" name="myForm">
                     <div class="form__item">
                         <label for="Name" class="visuallyhidden" id="maincontent">Name</label>
@@ -88,7 +86,7 @@
                         <input type="email" class="form__item--item" name="emailAddress" required="true" placeholder="Email address">
                     </div>
                     <label for="Message" class="visuallyhidden">Message</label>
-                    <textarea class="form__item" name="Message" placeholder="Message" required="true" rows="15"></textarea> 
+                    <textarea class="form__item" name="Message" placeholder="Message" required="true" cols="85" rows="15"></textarea> 
                     <!-- initial cols="30" rows="10" -->
                     <input class="form__item" type="submit" value="SUBMIT">
                 </form>

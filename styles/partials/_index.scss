@@ -1,17 +1,42 @@
 
-
-
-
-.who-is-sophie {
-    
+.description-section {
+    padding: 100px 0;
 } 
 
-// main {
-//     @include mainWrapper;
-// }
 
-.fas {
-    background: $primaryColor;
-    padding: 10px;
-    border-radius: 50%;
+
+
+
+// ICONS AND TEXT SECTION
+
+// BLOCK
+.services {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 100px 0;
+    
 }
+
+.services-container {
+
+    flex: 1 0 auto;
+    width: 50%;
+    display: flex;
+    &__icon {
+        background: $primaryColor;
+        padding: 10px;
+        border-radius: 50%;
+    }
+}
+
+.services-text-cell {
+    padding-left: 25px;
+        &__item a {
+            color: black;
+        }
+        &__item:first-child {
+            margin: 0;
+        }
+}
+
+

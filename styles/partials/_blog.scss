@@ -1,28 +1,27 @@
-.blogContent {
-    @include mainWrapper;
+.blog-content {
     margin: 0 auto;
     display: flex;
     padding-top: 100px;
 
-    &__Section {
+    &__section {
         &--aside {
             width: 33.33%;
             padding-right: 20px;
 
         }
-        &--Main {
+        &--main {
             width: 66.66%;
             
         }
     }
 }
 
-.asideContent {
+.aside-content {
     background: #fff;
     padding: 45px;
     margin-bottom: 20px;
 
-    &__aboutSection {
+    &__about-section {
         
         &--item a {
             display:inline-block;
@@ -32,7 +31,7 @@
         }
     }
 
-    &__recentSection {
+    &__recent-section {
         list-style: none;
         padding-left: 5px;
 
@@ -56,8 +55,6 @@
 
 }
 
-
-
 .blog-post {
     background: white;
     padding: 45px;
@@ -73,6 +70,11 @@
 
 }
 
+.italic-navy-text {
+    font-style: italic;
+    font-weight: bold;
+    color: $dateAuthorColor;
+}
 
 .blog-reply {
 
@@ -80,7 +82,10 @@
         margin: 35px 0;
         display: flex;  
         background: #fff;
+
     }
+
+    
 }
 
 

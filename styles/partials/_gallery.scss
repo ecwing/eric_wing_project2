@@ -6,7 +6,8 @@
 .gallery {
     margin: 0 auto;
     padding: 80px 0;
-    @include mainWrapper;
+    // @include mainWrapper;
+    
     background: #fff;
     display: flex;
     align-items: center;
