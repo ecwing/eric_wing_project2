@@ -250,6 +250,10 @@ input[type=submit] {
   clip: rect(0 0 0 0);
   overflow: hidden; }
 
+@media (max-width: 1280px) {
+  .main-wrapper {
+    max-width: 1024px; } }
+
 nav {
   background-color: #f6a823;
   display: -webkit-box;
@@ -362,9 +366,11 @@ header {
   .grid-container__row-1--item:last-child {
     padding-left: 55px; }
   .grid-container__row-1--image-1 {
-    box-shadow: -25px 25px 0px 0px #a82706, -600px 25px 0px 0px #a82706;
-    -webkit-box-shadow: -25px 25px 0px 0px #a82706, -600px 25px 0px 0px #a82706;
-    -moz-box-shadow: -25px 25px 0px 0px, -600px 25px 0px 0px #a82706; }
+    box-shadow: 25px 25px 0px 0px #a82706, -600px 25px 0px 0px #a82706;
+    -webkit-box-shadow: 25px 25px 0px 0px #a82706, -600px 25px 0px 0px #a82706;
+    -moz-box-shadow: 25px 25px 0px 0px, -600px 25px 0px 0px #a82706;
+    position: relative;
+    top: -55px; }
 
 .grid-container__row-2 {
   display: -webkit-box;
@@ -380,11 +386,13 @@ header {
   .grid-container__row-2--image-2 {
     box-shadow: 25px 25px 0px 0px #f6a823, 400px 25px 0px 0px #f6a823;
     -webkit-box-shadow: 25px 25px 0px 0px #f6a823, 600px 25px 0px 0px #f6a823;
-    -moz-box-shadow: 25px 25px 0px 0px, 400px 25px 0px 0px #f6a823; }
+    -moz-box-shadow: 25px 25px 0px 0px, 400px 25px 0px 0px #f6a823;
+    position: relative;
+    top: 35px; }
 
 .services {
   background: #f0efed;
-  padding: 100px 0; }
+  padding: 120px 0 100px 0; }
 
 .services-container {
   display: -webkit-box;
