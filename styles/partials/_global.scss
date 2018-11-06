@@ -2,6 +2,7 @@ $primaryColor: #f6a823; //oragney yellow
 $accentColor:#05afc1; // Accent or Button Color
 $backgroundColor: #f0efed; //white shade
 $dateAuthorColor: #285e64; //Dark grey blue
+$red-color: #a82706; //red rust
 $GreyColor: #4f4f4f; //Grey..
 $blackColor: #2c2c2c; //Black..
 $mainFont: 'Roboto', sans-serif;
@@ -95,9 +96,11 @@ a {
     text-transform: uppercase;
 }
 
-.find-out-item {
+.find-out-item,
+.read-more-item {
     margin-top: 40px;
 }
+
 
 a.find-out-button,
 a.read-more {
@@ -106,6 +109,7 @@ a.read-more {
     font-weight: bold;
     padding: 15px;
 }
+
 
 
 .form {
