@@ -286,30 +286,23 @@ nav {
     color: #fff; }
 
 header {
-  background-color: #f6a823;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center; }
+  background-color: #f6a823; }
 
-.header {
-  background: teal;
+.header-container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   position: relative; }
-  .header__item--circleText {
+  .header-container__item--circle-text {
     position: absolute;
     width: 20%;
     height: auto;
     left: -40px;
     top: 60px; }
-  .header__item--text {
+  .header-container__item--text {
     padding-right: 100px;
     font-size: 10rem; }
-  .header__item--img {
+  .header-container__item--img {
     -webkit-box-shadow: 25px 25px 0px 0px #fff;
     box-shadow: 25px 25px 0px 0px #fff;
     position: relative;
@@ -358,16 +351,35 @@ header {
 .description-container {
   padding-right: 250px; }
 
-.services {
-  background: #f0efed;
+.grid-container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
+  flex-wrap: wrap; }
+  .grid-container__item {
+    width: 50%; }
+    .grid-container__item__item:nth-child(3) {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+      flex-direction: row-reverse; }
+
+.services {
+  background: #f0efed;
   padding: 100px 0; }
 
 .services-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap; }
+
+.services-item {
   -webkit-box-flex: 1;
   -ms-flex: 1 0 auto;
   flex: 1 0 auto;
@@ -375,10 +387,11 @@ header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex; }
-  .services-container__icon {
+  .services-item__icon {
     background: #f6a823;
     padding: 10px;
-    border-radius: 50%; }
+    border-radius: 50%;
+    color: black; }
 
 .services-text-cell {
   padding-left: 25px; }

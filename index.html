@@ -69,10 +69,11 @@
         
         <!-- HEADER SECTION BEGINS -->
         <header>
-            <div class="header">
-                <img src="assets/circle-text.png" alt="circle" class="header__item--circleText">
-                <h1 class="header__item--text main-wrapper">sophie</h1>
-                <img src="assets/home-image-1.jpg" alt="Sophie holding to oranges in front of her eyes smiling with her tongue out" class="header__item--img">
+
+            <div class="header-container main-wrapper">
+                <img src="assets/circle-text.png" alt="circle" class="header-container__item--circle-text">
+                <h1 class="header-container__item--text">sophie</h1>
+                <img src="assets/home-image-1.jpg" alt="Sophie holding to oranges in front of her eyes smiling with her tongue out" class="header-container__item--img">
             </div>
         </header>
     <!-- HEADER SECTION ENDS -->
@@ -109,26 +110,31 @@
         </section>
 
         <section>
-            <div class="row1">
-                <div class="gridPic">
+
+
+        <div class="grid-container main-wrapper">
+            <!-- <div class="row1"> -->
+                <div class="grid-container__item grid-pic">
                     <img src="assets/home-image-2.jpg" alt="dog looking out an organge car window">
                 </div>
-                <div class="rowContent">
+                <div class="grid-container__item row-content">
                     <h3>sohpie's favourite things</h3>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam suscipit odio lorem, id vestibulum lacus tristique eu. Sed urna ex, porttitor nec iaculis at, consectetur vel turpis.</p>
                     <a href="#" class="read-more">read more</a>
                 </div>
-            </div>
-            <div class="row2">
-                <div class="gridPic">
-                    <img src="assets/home-image-3.jpg" alt="beach with blue chairs and orange umbrellas">
-                </div>
-                <div class="rowContent">
+            <!-- </div> -->
+            <!-- <div class="row-2"> -->
+                <div class="grid-container__item">
                     <h3>where she's travelled</h3>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In et risus nec orci ornare condimentum. Nam suscipit odio lorem, id vestibulum lacus tristique eu. Sed urna ex, porttitor nec iaculis at, consectetur vel turpis.</p>
                     <a href="#" class="read-more">read more</a>
                 </div>
-            </div>
+
+                <div class="grid-container__item">
+                    <img src="assets/home-image-3.jpg" alt="beach with blue chairs and orange umbrellas">
+                </div>
+            <!-- </div> -->
+        </div>
         </section>
         <!--GRID SECTION ENDS -->
 
@@ -141,45 +147,46 @@
 
 
 
-        <section class="services">
+    <section class="services">
 
-        
-        <div class="services-container main-wrapper">
+    <div class="services-container main-wrapper">
+            <div class="services-item">
                 <div>
-                    <i class="fas fa-image services-container__icon"></i>
+                    <a href="#photos"><i class="fas fa-image services-item__icon"></i></a>
                 </div>
                 <div class="services-text-cell">
-                    <h3 class="services-text-cell__item"><a href="#">photos</a></h3>
+                    <h3 class="services-text-cell__item"><a href="#photos">photos</a></h3>
                     <p class="services-text-cell__item">Ut felis eros, vehicula eu magna nec, laoreet blandit nisi. Fusce auctor erat ac sagittus mattis. Marus tempus velit sem, sit amet imperdiet dolor placerat et.</p>
                 </div>
             </div>
-            <div class="services-container">
+            <div class="services-item">
                 <div>
-                    <i class="fas fa-user services-container__icon"></i>
+                    <a href="#sohpies-journey"><i class="fas fa-user services-item__icon"></i></a>
                 </div>
                 <div class="services-text-cell">
-                    <h3 class="services-text-cell__item"><a href="#">about</a></h3>
+                    <h3 class="services-text-cell__item"><a href="#sohpies-journey">about</a></h3>
                     <p class="services-text-cell__item">Ut felis eros, vehicula eu magna nec, laoreet blandit nisi. Fusce auctor erat ac sagittus mattis. Marus tempus velit sem, sit amet imperdiet dolor placerat et.</p>
                 </div>
             </div>
-            <div class="services-container">
+            <div class="services-item">
                 <div>
-                    <i class="fas fa-desktop services-container__icon"></i>
+                    <a href="blog.html"><i class="fas fa-desktop services-item__icon"></i></a>
                 </div>
                 <div class="services-text-cell">
-                    <h3 class="services-text-cell__item"><a href="#">blog</a></h3>
+                    <h3 class="services-text-cell__item"><a href="blog.html">blog</a></h3>
                     <p class="services-text-cell__item">Ut felis eros, vehicula eu magna nec, laoreet blandit nisi. Fusce auctor erat ac sagittus mattis. Marus tempus velit sem, sit amet imperdiet dolor placerat et.</p>
                 </div>
             </div>
-            <div class="services-container">
+            <div class="services-item">
                 <div>
-                    <i class="fas fa-phone services-container__icon"></i>
+                    <a href="contact.html"><i class="fas fa-phone services-item__icon"></i></a>
                 </div>
                 <div class="services-text-cell">
                     <h3 class="services-text-cell__item"><a href="contact.html">get in touch</a></h3>
                     <p class="services-text-cell__item">Ut felis eros, vehicula eu magna nec, laoreet blandit nisi. Fusce auctor erat ac sagittus mattis. Marus tempus velit sem, sit amet imperdiet dolor placerat et.</p>
                 </div>
             </div>
+        </div>
         </section>
         <!-- EXT WITH ICONS SECTION ENDS -->
 
@@ -197,7 +204,7 @@
 
 
 
-        <section>
+        <section class="bottom-banner">
             <img src="assets/home-image-4.jpg" alt="orange stadium chairs">
         </section>
 
@@ -214,7 +221,7 @@
             <div class="journey-container main-wrapper">
                 <img src="assets/home-image-5.jpg" alt="woman wearing orange shirt with jeans and sunglasses posing outside" class="journey-container__image">
                 <div class="journey-container__text">
-                    <h2>sophie's journey</h2>
+                    <h2 id="sohpies-journey">sophie's journey</h2>
                     <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nulla pulvinar tortor nulla elementum eleifend. Vestibulum consequat vestibulum felis pharetrea luctus. Quiseque interdum orci quis convallis dapibus nulla pulvinar tortor. Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla pulvinar tortor nulla elementum eleifend. Vestibulum consequat vestibulum felis pharetra luctus. Quiseque interdum orci quis convallis.</p>
                     <div class="find-out-item">
                         <a href="#" class="find-out-button">find out more</a>
@@ -237,7 +244,7 @@
 
 
         <!-- BOTTOM GALLERY SECTION BEGINS -->
-        <section class="gallery main-wrapper">
+        <section class="gallery main-wrapper" id="photos">
 
             <div class="gallery-container">
                 <div class="gallery-container__image">

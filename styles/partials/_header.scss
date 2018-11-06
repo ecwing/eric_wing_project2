@@ -1,15 +1,12 @@
 header {
     background-color: $primaryColor;
-    display: flex;
-    justify-content: center;
 }
 
-.header {
-    background: teal;
+.header-container {
     display: flex;
     position: relative;
 
-    &__item--circleText {
+    &__item--circle-text {
         position: absolute;
         width: 20%;
         height: auto;
