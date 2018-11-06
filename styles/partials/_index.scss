@@ -1,8 +1,12 @@
 
-.description-section {
+.description {
+    background: $backgroundColor;
     padding: 100px 0;
 } 
 
+.description-container {
+    padding-right: 250px;
+}
 
 
 
@@ -11,6 +15,7 @@
 
 // BLOCK
 .services {
+    background: $backgroundColor;
     display: flex;
     flex-wrap: wrap;
     padding: 100px 0;
@@ -18,7 +23,6 @@
 }
 
 .services-container {
-
     flex: 1 0 auto;
     width: 50%;
     display: flex;

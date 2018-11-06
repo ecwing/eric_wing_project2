@@ -1,29 +1,24 @@
 /*  Block */
-.gal {
+.gallery {
     background: #fff;
 }
 
-.gallery {
-    margin: 0 auto;
-    padding: 80px 0;
-    // @include mainWrapper;
-    
+.gallery-container {
+    padding: 100px 0;
     background: #fff;
     display: flex;
-    align-items: center;
     justify-content: space-between;
-}
-
-    .gallery__cell {
+    &__image {
         padding: 0 10px;
         margin: 0;
     }
-
-    .gallery__cell:first-child {
+    &__image:first-child {
         padding-left: 0;
     }
-
-    .gallery__cell:last-child {
+    &__image:last-child {
         padding-right: 0;
     }
+}
+
+
 
