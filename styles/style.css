@@ -384,19 +384,17 @@ header {
 
 .journey {
   background: #f0efed;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center; }
+  border: solid red 2px; }
 
-.journeyFlex {
+.journey-container {
   padding: 100px 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex; }
-  .journeyFlex__item {
+  .journey-container__image {
+    -webkit-box-shadow: 25px 25px 0px 0px #f6a823;
+    box-shadow: 25px 25px 0px 0px #f6a823; }
+  .journey-container__text {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -405,12 +403,8 @@ header {
     -ms-flex-direction: column;
     flex-direction: column;
     padding-left: 70px; }
-  .journeyFlex__item h2 {
+  .journey-container__text h2 {
     margin: 0; }
-
-.journey img {
-  -webkit-box-shadow: 25px 25px 0px 0px #f6a823;
-  box-shadow: 25px 25px 0px 0px #f6a823; }
 
 /*  Block */
 .gal {

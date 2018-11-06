@@ -1,29 +1,26 @@
 .journey {
     background: $backgroundColor;
-    display: flex;
-    justify-content: center;
+    border: solid red 2px;
 }
 
-.journeyFlex {
-    // @include mainWrapper;
-    // margin: 0 auto;
+.journey-container {
     padding: 100px 0;
     display: flex;
-
-        &__item {
+    &__image {
+        box-shadow: 25px 25px 0px 0px $primaryColor;
+    }
+    
+        &__text {
             display: flex;
             flex-direction: column;
             // border: 2px solid red;
             padding-left: 70px;
         }
 
-        &__item h2 {
+        &__text h2 {
                 margin: 0;
             }
 }
 
 
 
-.journey img {
-    box-shadow: 25px 25px 0px 0px $primaryColor;
-}
