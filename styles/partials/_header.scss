@@ -1,10 +1,9 @@
 header {
-    background-color: $primaryColor;
+    background-color: $primary-color;
 }
 
 .header-container {
     display: flex;
-    // position: relative;
 
     &__item--circle-text {
         position: absolute;
@@ -62,7 +61,7 @@ header {
     }
         &__item--text {
             padding-right: 50px;
-            font-size: 10rem;
+            @include font-size(120);
         }
 
         &__item--img {
@@ -71,7 +70,6 @@ header {
         }
     }
 }
-
 
 @media (max-width: 1012px) {
     .header-banner-contact,

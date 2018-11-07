@@ -1,66 +1,62 @@
 nav {
-    background-color: $primaryColor;
+    background-color: $primary-color;
     display: flex;
     justify-content: center;
 }
 
 .nav {
-    @include menuText;
+    @include menu-text;
     list-style: none;
     display: flex;
     align-items: center;
     margin: 0;
     padding-left: 0px;
-    @include fontSize(20);
+    @include font-size(20);
 
     &__item {
         padding: 20px;
         &--focus {
-            font-family: $secondaryFont;
-            @include fontSize(35);
+            font-family: $secondary-font;
+            @include font-size(35);
         }
     }
 
     &__item a {
         text-decoration: none;
         text-transform: uppercase;
-        color: $blackColor;
+        color: $black-color;
     }
     
     .nav__item--active a {
         color: #fff;  
     }
-
 }
-
-
 
 .hamburger, 
 .cross {
-  display: none;
-  background:none;
-  position:absolute;
-  top:0;
-  right:0;
-  line-height:45px;
-  border: none;
-  padding:5px 15px 0px 15px;
-  color:$black-color;
-  font-size:3.4rem;
-  font-weight:bold;
-  cursor:pointer;
-  outline:none;
-  z-index:10000000000000;
+    display: none;
+    background:none;
+    position:absolute;
+    top:0;
+    right:0;
+    line-height:45px;
+    border: none;
+    padding:5px 15px 0px 15px;
+    color:$black-color;
+    font-size:3.4rem;
+    font-weight:bold;
+    cursor:pointer;
+    outline:none;
+    z-index:10000000000000;
 }
 .cross{
-  padding:7px 15px 0px 15px;
-  font-size: 7rem;
-  line-height:65px;
-  z-index:10000000000000;
+    padding:7px 15px 0px 15px;
+    font-size: 7rem;
+    line-height:65px;
+    z-index:10000000000000;
 }
 .menu {z-index:1000000; font-weight:bold; width:100%; text-align:center;}
-
-.menu{z-index:1000000; font-weight:bold; background:$primaryColor; text-align:center; @include font-size(20);}
+.menu{z-index:1000000; font-weight:bold; background:$primary-color; text-align:center; @include font-size(20);}
 .menu ul {margin: 0; padding: 0; list-style-type: none;}
 .menu li {display: block; padding:15px 0 15px 0; border-bottom: $black-color 1px solid; }
 .menu li:hover{display: block; background:#ffffff; padding:15px}
@@ -72,14 +68,14 @@ nav {
 // code credit for hamburger nav from author: Glenn Smith @ https://codepen.io/g13nn/pen/eHGEF
 
 @media (max-width: 700px) {
-        .nav {
-            @include fontSize(15);
+    .nav {
+        @include font-size(15);
 
         &__item {
             padding: 15px;
             &--focus {
-                font-family: $secondaryFont;
-                @include fontSize(25);
+                font-family: $secondary-font;
+                @include font-size(25);
             }
         }
     }
@@ -87,13 +83,13 @@ nav {
 
 @media (max-width: 540px) {
             .nav {
-            @include fontSize(10);
+            @include font-size(10);
 
         &__item {
             padding: 10px;
             &--focus {
-                font-family: $secondaryFont;
-                @include fontSize(20);
+                font-family: $secondary-font;
+                @include font-size(20);
             }
         }
     }

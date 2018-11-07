@@ -24,7 +24,7 @@
         &--item a {
             display:inline-block;
             text-transform: initial;
-            color: $dateAuthorColor;
+            color: $date-author-color;
             font-weight: bold;
         }
     }
@@ -43,19 +43,17 @@
 
         &--item::before {
             content: "\2022";
-            color: $primaryColor;
+            color: $primary-color;
             font-weight: bold;
             display: inline-block;
             width: 15px;
-            // margin-left: -35px;
             display: flex;
             align-items: center;
         }
 
-        
         &--item a {
             text-transform: initial;
-            color: $blackColor;         
+            color: $black-color;         
         }
     }
 
@@ -64,7 +62,7 @@
 .blog-post {
     background: white;
     padding: 45px;
-    border-bottom: 5px solid $primaryColor;
+    border-bottom: 5px solid $primary-color;
 
     &__text:first-child {
         margin: 0;
@@ -78,7 +76,7 @@
 .italic-navy-text {
     font-style: italic;
     font-weight: bold;
-    color: $dateAuthorColor;
+    color: $date-author-color;
     margin: 5px;
     margin-top: 0;
 }
@@ -100,7 +98,7 @@
     }
     
     &__section:last-child {
-       border-bottom: 5px solid $primaryColor;
+       border-bottom: 5px solid $primary-color;
     }
 }
 
@@ -119,34 +117,28 @@
 
     .blog-content {
         display: initial;
-        &__section {
-            &--aside {
-                width: 95%;
-                padding-right: 20px;
-            }
+            &__section {
+                &--aside {
+                    width: 95%;
+                    padding-right: 20px;
+                }
 
-            &--main {
-                width: 95%;       
+                &--main {
+                    width: 95%;       
+                }
             }
+        .blog-content__section--aside {
+            padding-right: 0px;
+            margin: 0 auto;
         }
-    .blog-content__section--aside {
-        padding-right: 0px;
-        margin: 0 auto;
+
+        .blog-content__section--main {
+            margin: 0 auto;
+        }
+
+        .header-banner-blog__item {
+            text-align: center;
+        }
     }
-
-    .blog-content__section--main {
-        margin: 0 auto;
-    }
-
-    .header-banner-blog__item {
-        text-align: center;
-    }
-
-
-}
-
-
-
-
 }
 

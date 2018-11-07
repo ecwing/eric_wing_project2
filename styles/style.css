@@ -144,7 +144,7 @@ h1 {
   font-family: "Lora", serif;
   text-transform: uppercase;
   font-weight: bold;
-  line-height: fontSize(92);
+  line-height: font-size(92);
   font-size: 80px;
   font-size: 8rem; }
 
@@ -496,7 +496,8 @@ header {
       top: 110px; }
     .header-container__item--text {
       padding-right: 50px;
-      font-size: 10rem; }
+      font-size: 120px;
+      font-size: 12rem; }
     .header-container__item--img {
       max-height: 300px;
       width: auto; } }

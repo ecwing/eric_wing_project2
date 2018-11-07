@@ -1,5 +1,5 @@
 .journey {
-    background: $backgroundColor;
+    background: $background-color;
 }
 
 .journey-container {
@@ -9,7 +9,7 @@
 
     &__image {
         width: 100%;
-        box-shadow: 25px 25px 0px 0px $primaryColor;
+        box-shadow: 25px 25px 0px 0px $primary-color;
 
     }
     

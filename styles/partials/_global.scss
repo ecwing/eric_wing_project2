@@ -1,13 +1,13 @@
+$primary-color: #f6a823; //oragney yellow
 $primaryColor: #f6a823; //oragney yellow
-$accentColor:#05afc1; // Accent or Button Color
-$backgroundColor: #f0efed; //white shade
-$dateAuthorColor: #285e64; //Dark grey blue
+$accent-color:#05afc1; // Accent or Button Color
+$background-color: #f0efed; //white shade
+$date-author-color: #285e64; //Dark grey blue
 $red-color: #a82706; //red rust
-$GreyColor: #4f4f4f; //Grey..
-$blackColor: #2c2c2c; //Black..
-$black-color: #2c2c2c;
-$mainFont: 'Roboto', sans-serif;
-$secondaryFont: 'Lora', serif;
+$grey-color: #4f4f4f; //Grey..
+$black-color: #2c2c2c; //Black color
+$main-font: 'Roboto', sans-serif;
+$secondary-font: 'Lora', serif;
 
 html {
     font-size: 62.5%;
@@ -15,71 +15,65 @@ html {
 
 body {
     margin: 0 auto;
-    background: $backgroundColor;
+    background: $background-color;
     
 }
-
-@mixin fontSize($sizeValue){
-    font-size: $sizeValue * 1px;
-    font-size: ($sizeValue/10) * 1rem;
-}
-
 
 @mixin font-size($size-value) {
     font-size: $size-value * 1px;
     font-size: ($size-value / 10) * 1rem;
 }
 
-@mixin primaryFont($size){
-    font-family: $mainFont;
-    color: $blackColor;
+@mixin primary-font($size){
+    font-family: $main-font;
+    color: $black-color;
 }
 
-@mixin secondaryFont($size) {
-    font-family: $secondaryFont;
-    color: $blackColor;
+@mixin secondary-font($size) {
+    font-family: $secondary-font;
+    color: $black-color;
 }
 
 h1 {
-    font-family: $secondaryFont;
+    font-family: $secondary-font;
     text-transform: uppercase;
     font-weight: bold;
-    line-height: fontSize(92);
-    @include fontSize(80);
+    line-height: font-size(92);
+    @include font-size(80);
 }
 
 h2 {
-    font-family: $mainFont;
+    font-family: $main-font;
     text-transform: uppercase;
     font-weight: bold;
     letter-spacing: 1px;
-    @include fontSize(42);
+    @include font-size(42);
 }
 
 h3 {
-    font-family: $mainFont;
+    font-family: $main-font;
     text-transform: uppercase;
     font-weight: bold;
     letter-spacing: 1px;
-    @include fontSize(32);
+    @include font-size(32);
 }
 
 h4 {
-    font-family: $mainFont;
+    font-family: $main-font;
     text-transform: uppercase;
     font-weight: bold;
     letter-spacing: 1px;
-    @include fontSize(24);
+    @include font-size(24);
 }
 
 p {
-    font-family: $mainFont;
+    font-family: $main-font;
     line-height: 32px;
-    @include fontSize(20);
+    @include font-size(20);
 }
 
-@mixin menuText {
-    font-family: $mainFont;
+@mixin menu-text {
+    font-family: $main-font;
     font-weight: bold;
     text-transform: uppercase;
     line-height: 29px;
@@ -94,8 +88,8 @@ p {
 }
 
 @mixin button-text($size) {
-    color: $blackColor;
-    background: $accentColor;
+    color: $black-color;
+    background: $accent-color;
     font-family: 'Roboto', sans-serif;
 }
 
@@ -117,10 +111,10 @@ a {
 
 a.find-out-button,
 a.read-more {
-    background: $accentColor;
-    color: $blackColor;
+    background: $accent-color;
+    color: $black-color;
     font-weight: bold;
-    @include fontSize(20);
+    @include font-size(20);
     padding: 15px;
 }
 
@@ -198,7 +192,7 @@ textarea {
 }
 
 input[type=submit] {
-    background: $accentColor;
+    background: $accent-color;
     font-weight: bold;
     padding: 15px 0;
     margin: 12px 0;
