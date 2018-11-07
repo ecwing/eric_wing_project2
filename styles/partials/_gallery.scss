@@ -20,5 +20,16 @@
     }
 }
 
+@media (max-width: 740px) {
 
+    .gallery-container {
+        padding: 100px 0;
+        flex-direction: column;
+        align-items: center;
+        &__image {
+            padding: 5px 0;
+            margin: 0;
+        }
+    }
+}
 

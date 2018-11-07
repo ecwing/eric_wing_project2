@@ -5,15 +5,17 @@
 .journey-container {
     padding: 100px 0;
     display: flex;
+    align-items: flex-start;
+
     &__image {
-        // width: 45%;
+        width: 100%;
         box-shadow: 25px 25px 0px 0px $primaryColor;
+
     }
     
         &__text {
             display: flex;
             flex-direction: column;
-            // border: 2px solid red;
             padding-left: 70px;
         }
 
@@ -22,5 +24,22 @@
             }
 }
 
+@media (max-width: 740px) {
+    .journey-container {
+    padding: 10px;
+    padding-top: 30px;
+    flex-direction: column;
+    align-items: flex-start;
+    
+    &__image {
+        width: 50%;
+        margin: 0 auto;
+    }
+    &__text {
+        padding-left: 0;
+        text-align: center;
+    }
+}
+}
 
 
