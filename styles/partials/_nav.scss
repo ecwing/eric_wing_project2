@@ -11,12 +11,13 @@ nav {
     align-items: center;
     margin: 0;
     padding-left: 0px;
+    @include fontSize(20);
 
     &__item {
         padding: 20px;
         &--focus {
             font-family: $secondaryFont;
-            @include fontSize(30);
+            @include fontSize(35);
         }
     }
 

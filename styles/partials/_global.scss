@@ -8,14 +8,25 @@ $blackColor: #2c2c2c; //Black..
 $mainFont: 'Roboto', sans-serif;
 $secondaryFont: 'Lora', serif;
 
+html {
+    font-size: 62.5%;
+}
+
 body {
     margin: 0 auto;
-    background: #fff;
+    background: $backgroundColor;
+    
 }
 
 @mixin fontSize($sizeValue){
     font-size: $sizeValue * 1px;
-    // font-size: ($sizeValue/10) * 1rem;
+    font-size: ($sizeValue/10) * 1rem;
+}
+
+
+@mixin font-size($size-value) {
+    font-size: $size-value * 1px;
+    font-size: ($size-value / 10) * 1rem;
 }
 
 @mixin primaryFont($size){
@@ -78,6 +89,7 @@ p {
 .main-wrapper {
     max-width: 1280px;
     margin: 0 auto;
+    width: 85%;
 }
 
 @mixin buttonText($size) {
@@ -111,17 +123,70 @@ a.read-more {
 }
 
 
-
 .form {
     display: flex;
     flex-direction: column;
 
     &__item {
         display: flex;
-        // padding: 10px 0;
         &--item {
             width: 100%;
         }
+    }
+}
+
+.contact__form {
+    width: 100%;
+    padding-left: 45px;
+    &--text-area {
+        min-height: 300px;
+    }
+}
+
+// RESPONSIVE STYLES FOR THE FORM
+// -------------------------------
+@media (max-width: 1012px) {
+    
+    .main-wrapper {
+        width: 95%;
+    }
+
+    .header-banner-contact__item {
+        text-align: center;
+    }
+    .contact {
+        flex-direction: column;
+        width: 70%;
+        margin: 20px auto;
+    }
+
+    .contact__form {
+        padding-left: 0;
+        margin: 5px 0;
+    }
+    
+    .form__item {
+        display: flex;
+        flex-direction: column;
+        &--item {
+            margin: 5px 0;
+        }
+    } 
+
+}
+
+@media (max-width: 600px) {
+    
+    .contact {
+        width: 90%;
+        &__info {
+            background: teal;
+            padding-left: 5px;
+            padding-right: 5px;
+        }
+    }
+    .social-icons {
+        justify-content: space-around;
     }
 }
 
@@ -130,12 +195,15 @@ input[type=email],
 input[type=submit],
 textarea {
     border: none;
-    padding: 15px;
-    margin: 2px;
+    padding: 25px;
+    @include font-size(20);
+}
+input[type=text] {
+    margin-right: 10px;
 }
 
 textarea {
-    padding-top: 20px;
+    margin-top: 10px;
 }
 
 ::placeholder {
@@ -168,5 +236,6 @@ input[type=submit] {
 
     .main-wrapper {
         max-width: 1024px;
+        // padding: 0 128px;
     }
 }

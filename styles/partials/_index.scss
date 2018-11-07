@@ -1,6 +1,5 @@
 
 .description {
-    background: $backgroundColor;
     padding: 100px 0;
 } 
 
@@ -13,7 +12,9 @@
 
 
 
-
+.grid-container {
+    background: #fff;
+}
 
 .grid-container__row-1 {
         display: flex;
@@ -57,10 +58,6 @@
             top: 35px;
         }
 }
-
-
-
-
 
 // ICONS AND TEXT SECTION
 

@@ -1,34 +1,14 @@
 
 .contact {
     display: flex;
-    flex: wrap;
-    justify-content: center;
-    // margin: 0 auto;
-    margin: 100px 0;
-    // border: 2px solid blue;
+    margin: 100px auto;
+    // border: 2px dotted blue;
     
     &__info {
         background: #fff;
-        // border: solid tomato 2px;
         padding-left: 25px;
-        height: 20%;
-        // padding-bottom: 25px;
-
-    &__form {
-        // width: 66.66%;
-        flex: 2 0 auto;
+        padding-right: 70px;
     }
-
-    }
-}
-
-aside {
-    // width: 100%;
-    // @include mainWrapper;
-    background: #fff;
-    border: solid tomato 2px;
-    padding-left: 25px;
-    padding-bottom: 25px;
 }
 
 // block
@@ -37,6 +17,7 @@ aside {
     @include fontSize(25);
     display: flex;
     padding-left: 0;
+    margin-top: 0;
     /* Element */
     &__icon {
         margin: 8px 0;
@@ -68,6 +49,23 @@ aside {
             font-style: normal;
             margin: 0;
             padding: 0;
+        }
+    }
+}
+
+@media (max-width: 600px) {
+    
+    .contact {
+        width: 90%;
+        text-align: center;
+        &__info {
+            padding: 10px 5px;
+        }
+    }
+    .social-icons {
+        justify-content: space-around;
+        &__icon {
+            font-size: 3.5rem;
         }
     }
 }
