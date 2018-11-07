@@ -148,5 +148,32 @@
         <p class="footer__content">Copyright &copy; HackerYou 2018</p>
     </footer>
     <!-- FOOTER SECTION ENDS -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script>
+
+            // code credit for hamburger nav from author: Glenn Smith @ https://codepen.io/g13nn/pen/eHGEF
+
+            $(document).ready(function () {
+
+                $(".cross").hide();
+                $(".menu").hide();
+                $(".hamburger").click(function () {
+                    $(".menu").slideToggle("slow", function () {
+                        $(".hamburger").hide();
+                        $(".cross").show();
+                    });
+                });
+
+                $(".cross").click(function () {
+                    $(".menu").slideToggle("slow", function () {
+                        $(".cross").hide();
+                        $(".hamburger").show();
+                    });
+                });
+
+            });
+
+
+        </script>
 </body>
 </html>

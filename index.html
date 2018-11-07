@@ -40,7 +40,26 @@
                         <a href="contact.html">contact</a>
                     </li>
                 </ul>
+
+                <ul class="menu">
+                    <li class="nav__item nav__item--active">
+                        <a href="#">home</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#">about</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="blog.html">blog</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="contact.html">contact</a>
+                    </li>
+                </ul>
+                
+
             </div>
+            <button class="hamburger">&#9776;</button>
+            <button class="cross">&#735;</button>
         </nav>
         <!-- TOP NAVIGATION MENU SECTION ENDS -->
         
@@ -254,19 +273,39 @@
     </main>
     <!-- MAIN CONTENT SECTION ENDS -->
     
-
-
-
-
-
-
-
-
-
     <!-- FOOTER SECTION BEGINS -->
     <footer class="footer">
         <p class="footer__content">Copyright &copy; HackerYou 2018</p>
     </footer>
     <!-- FOOTER SECTION ENDS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+
+        // code credit for hamburger nav from author: Glenn Smith @ https://codepen.io/g13nn/pen/eHGEF
+
+        $(document).ready(function () {
+
+                $(".cross").hide();
+                $(".menu").hide();
+                $(".hamburger").click(function () {
+                    $(".menu").slideToggle("slow", function () {
+                        $(".hamburger").hide();
+                        $(".cross").show();
+                    });
+                });
+
+                $(".cross").click(function () {
+                    $(".menu").slideToggle("slow", function () {
+                        $(".cross").hide();
+                        $(".hamburger").show();
+                    });
+                });
+
+            });
+
+
+    </script>
+
+
 </body>
 </html>

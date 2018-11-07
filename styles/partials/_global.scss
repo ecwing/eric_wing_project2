@@ -5,6 +5,7 @@ $dateAuthorColor: #285e64; //Dark grey blue
 $red-color: #a82706; //red rust
 $GreyColor: #4f4f4f; //Grey..
 $blackColor: #2c2c2c; //Black..
+$black-color: #2c2c2c;
 $mainFont: 'Roboto', sans-serif;
 $secondaryFont: 'Lora', serif;
 
@@ -100,7 +101,7 @@ p {
 
 img {
     display: block;
-    width: 100%;
+    max-width: 100%;
 }
 
 a {
