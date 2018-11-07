@@ -2,7 +2,6 @@
     margin: 0 auto;
     display: flex;
     padding-top: 100px;
-
     &__section {
         &--aside {
             width: 33.33%;
@@ -10,8 +9,7 @@
 
         }
         &--main {
-            width: 66.66%;
-            
+            width: 66.66%;       
         }
     }
 }
@@ -35,21 +33,29 @@
         list-style: none;
         padding-left: 5px;
 
+        &--item {
+            display: flex;
+            font-family: "Roboto", sans-serif;
+            line-height: 32px;
+            font-size: 20px;
+            font-size: 2rem;
+        }
+
         &--item::before {
             content: "\2022";
             color: $primaryColor;
             font-weight: bold;
             display: inline-block;
-            width: 2em;
-            margin-left: -2em;
+            width: 15px;
+            // margin-left: -35px;
+            display: flex;
+            align-items: center;
         }
+
         
         &--item a {
-            display: flex;
             text-transform: initial;
-            color: $blackColor;
-            
-            
+            color: $blackColor;         
         }
     }
 
@@ -67,28 +73,80 @@
     &__text:nth-child(2) {
         font-style: italic;
     }
-
 }
 
 .italic-navy-text {
     font-style: italic;
     font-weight: bold;
     color: $dateAuthorColor;
+    margin: 5px;
+    margin-top: 0;
 }
 
 .blog-reply {
 
     &__section {
         margin: 35px 0;
+        padding: 20px 10px 20px 45px;
         display: flex;  
         background: #fff;
+        &--image {
+            width: 10%;
+        }
+        &--text {
+            width: 90%;
+            padding-left: 20px;
+        }
+    }
+    
+    &__section:last-child {
+       border-bottom: 5px solid $primaryColor;
+    }
+}
 
+@media (max-width: 1012px) {
+
+    .aside-content {
+        padding: 20px;
     }
 
-    
+    .blog-post {
+        padding: 20px;
+    }
+}
+
+@media (max-width: 600px) {
+
+    .blog-content {
+        display: initial;
+        &__section {
+            &--aside {
+                width: 95%;
+                padding-right: 20px;
+            }
+
+            &--main {
+                width: 95%;       
+            }
+        }
+    .blog-content__section--aside {
+        padding-right: 0px;
+        margin: 0 auto;
+    }
+
+    .blog-content__section--main {
+        margin: 0 auto;
+    }
+
+    .header-banner-blog__item {
+        text-align: center;
+    }
+
+
 }
 
 
 
 
+}
 

@@ -26,7 +26,9 @@ header {
     }
 }
 
-.header-banner-contact {
+.header-banner-contact,
+.header-banner-blog
+{
     background-image: url('../assets/contact-image-1.jpg');
     background-position: center;
     background-repeat: no-repeat;
@@ -44,17 +46,12 @@ header {
 }
     .header-banner-blog {
         background-image: url('../assets/blog-image-1.jpg');
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: center;
-        height: 400px;
-        width: 100%;
-        display: flex;
-        align-items: flex-end;
-
-            &__item {
-                margin: 0;
-                position: relative;
-                top: 50px;
-            }
     }
+
+@media (max-width: 1012px) {
+    .header-banner-contact,
+    .header-banner-blog
+    {
+        height: 200px;
+    }
+}
